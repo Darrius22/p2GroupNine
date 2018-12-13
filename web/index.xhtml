@@ -7,33 +7,23 @@
         <title>Home</title>
     </h:head>
     <h:body>
-        <div class="topnav" id="myTopnav">
-            <a  href="#home">Instructors</a>
-            <a href="#news">Gallery</a>
-            <a class="active" href="#contact">Home</a>
-            <a href="#about">TSA</a>
-            <a href="#about">Contact</a>
+        <div class="wrapper">
+            <nav role='navigation'>
+                <ul>
+                    <li><a href="#contact">Instructors</a></li>
+                    <li><a href="#contact">Gallery</a></li>
+                    <li><a class="active" href="#contact">Home</a></li>
+                    <li><a href="#contact">TSA</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="Aboutsec" id="about">
+                <h1>
+                    About CSA
+                </h1>
+            </div>
         </div>
-        <script>
-<!-- When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size -->
-            window.onscroll = function () {
-                scrollFunction();
-            };
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    document.getElementById("myTopnav").style.padding = "5px 3px";
-                } else {
-                    document.getElementById("myTopnav").style.padding = "38px 25px";
-                }
-            }
-        </script>
-        <div class="Aboutsec" id="about">
-            <h1>
-            About CSA
-        </h1>
-        </div>
-        
     </h:body>
 </html>
 
